@@ -3,8 +3,8 @@
 # Jekyll & Global Configuration
 ## Docs: https://jekyllrb.com/docs/configuration/
 # ---------------------------------------------------------------
-# remote_theme           : Simpleyyt/jekyll-theme-next
-repository: jypost/jypost.github.io
+remote_theme           : Simpleyyt/jekyll-theme-next
+# repository: jypost/jypost.github.io
 # Site
 title: JYPOST
 subtitle: deep learning
