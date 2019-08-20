@@ -84,5 +84,5 @@ seq.show_grid(images[0], cols=8, rows=8)
 
 {% endhighlight %}
 
-* 최종 결과 이미지 출력 ( 데이터가 이쪽저쪽 늘이고 줄이고 많아진것 확인 )<br>
+## 최종 결과 이미지 출력 ( 데이터가 이쪽저쪽 늘이고 줄이고 많아진것 확인 )<br>
 ![Imgur](https://i.imgur.com/Aa2edca.png)
