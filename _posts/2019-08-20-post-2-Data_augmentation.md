@@ -9,7 +9,7 @@ tags:
 - Data preprocessing
 ---
 
-# <span style="color:#C83821">Data_augmentation</span><br>
+# <span style="color:black">Data_augmentation</span><br>
 번역해보면,<br>
 데이터 증식, 데이터 보강, 데이터 증강, 데이터 확장, 데이터 보완, 데이터 늘이기 등. 다양하게 번역되는 용어이다.<br>
 기존 데이터를 이리저리 변형해 새로운 데이터를 만들어 기존 데이터에 덧붙이는 방식으로
