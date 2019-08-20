@@ -1,5 +1,5 @@
 ---
-title: "Data_augmentation"
+title: "데이터가 부족할땐, Data_augmentation"
 date: 2019-8-20 20:09:28 -0400
 categories: Deep Learning
 tags:
@@ -9,9 +9,8 @@ tags:
 - Data preprocessing
 ---
 
-# <span style="color:#C83821">데이터 늘이기</span><br>
-Data_augmentation,<br>
-짧게 정리하면,<br>
+# <span style="color:#C83821">Data_augmentation</span><br>
+번역해보면,<br>
 데이터 증식, 데이터 보강, 데이터 증강, 데이터 확장, 데이터 보완, 데이터 늘이기 등. 다양하게 번역되는 용어이다.<br>
 기존 데이터를 이리저리 변형해 새로운 데이터를 만들어 기존 데이터에 덧붙이는 방식으로
 기존 데이터를 보강한다는 면을 생각하면 <span style="color:#2539A6; font-size: 1.6rem;">**'데이터 늘이기'**</span>라는 말이 개념을 가장 잘 나타내는것 같다.<br>
@@ -29,6 +28,8 @@ GAN의 특징과 구조, 개념에 대해 정리해보겠습니다.
   * 반론도 있다함.(이런식으로 증가된 데이터가 실제 데이터를 대체할 만한 것이 아니다)
   * 아래 데모 코드 참조
 <br><br>
+
+## <span style="color:#C83821">imgaug 라이브러리를 활용하면 쉽게 data augmentation을 할 수 있다.</span><br>
 
 {% highlight python %}
 
