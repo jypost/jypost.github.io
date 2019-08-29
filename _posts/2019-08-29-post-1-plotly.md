@@ -8,15 +8,14 @@ tags:
 - chart
 ---
 
-# 오프라인 플로팅
-## plotly.offline.plot()
+# plotly.offline.plot()
 * 로컬에 그리고자하는 그래프를 웹브라우저에서 열리는 HTML을 만들고 독립 실행 형태로 만든다.
 * Ploty 버전 1.9.4 이상이 필요
 
 
 {% highlight python %}
-	import plotly
-	plotly.__version__
+import plotly
+plotly.__version__
 {% endhighlight %}
 
 ## 샘플코드 
