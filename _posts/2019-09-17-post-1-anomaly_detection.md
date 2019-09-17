@@ -99,7 +99,7 @@ keras.__version__
 
 ```python
 #학습데이터
-traindata_path = '/data/home/1004207/SOCAR/data_0905/df_Carnival_except_0829_0830.csv'
+traindata_path = '/data_0905/df_Carnival_except_0829_0830.csv'
 traindata = pd.read_csv(traindata_path)
 print('\n Data shape')
 print('------------------------')
@@ -108,7 +108,7 @@ print('------------------------')
 
 
 #검증데이터
-testdata_path = '/data/home/1004207/SOCAR/data_0905/df_Carnival.csv'
+testdata_path = '/data_0905/df_Carnival.csv'
 testdata = pd.read_csv(testdata_path)
 print('\n testdata shape')
 print('------------------------')
