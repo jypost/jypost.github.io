@@ -225,6 +225,9 @@ plt.figure(figsize=(25,5))
 plt.plot(test_set, color='b')
 ```
 
+![output_10_1](https://user-images.githubusercontent.com/42435620/65034989-1c48ff80-d983-11e9-96e1-8b406ac931bc.png)
+![output_19_0](https://user-images.githubusercontent.com/42435620/65034990-1c48ff80-d983-11e9-984d-856a0ee38ed4.png)
+![output_19_1](https://user-images.githubusercontent.com/42435620/65034992-1c48ff80-d983-11e9-9b96-7f27ba9d26b0.png)
 
 ![ex_screenshot](./../img/output_10_1.png)
 
