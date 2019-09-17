@@ -226,7 +226,7 @@ plt.plot(test_set, color='b')
 ```
 
 <div align="center">
-  <img src="./img/output_10_1.png" width="400">  
+  <img src="./../img/output_10_1.png" width="400">  
   <p>test_set timeserise.</p>
 </div>
 
@@ -318,11 +318,11 @@ plt.show()
 
 
 <div align="center">
-  <img src="./img/output_19_0.png" width="400">  
+  <img src="./../img/output_19_0.png" width="400">  
   <p>test_set timeserise.</p>
 </div>
 
 <div align="center">
-  <img src="./img/output_19_1.png" width="400">  
+  <img src="./../img/output_19_1.png" width="400">  
   <p>test_set timeserise.</p>
 </div>
