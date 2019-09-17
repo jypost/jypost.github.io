@@ -315,7 +315,8 @@ plt.title("test_Set_feature co and seq_45_id_b33")
 plt.legend(['y_ture', 'y_pred'], loc='upper left')
 plt.show()
 ```
-
+![ex_screenshot](./../img/output_19_0.png)
+![ex_screenshot](./../img/output_19_1.png)
 
 <div align="center">
   <img src="img/output_19_0.png" width="800">  
