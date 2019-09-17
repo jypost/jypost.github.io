@@ -225,10 +225,10 @@ plt.figure(figsize=(25,5))
 plt.plot(test_set, color='b')
 ```
 
-
-![Imgur](img/output_10_1.png)
-
-![png](output_10_1.png)
+<div align="center">
+  <img src="./img/output_10_1.png" width="400">  
+  <p>test_set timeserise.</p>
+</div>
 
 
 # LSTM Input dimension transfer
@@ -317,43 +317,12 @@ plt.show()
 ```
 
 
-![png](output_19_0.png)
+<div align="center">
+  <img src="./img/output_19_0.png" width="400">  
+  <p>test_set timeserise.</p>
+</div>
 
-
-
-![png](output_19_1.png)
-
-
-
-```python
-yPreds = model.predict(X_test)
-yPred = np.argmax(yPreds, axis=1)
-yTrue = np.argmax(Y, axis=1)
-
-accuracy = metrics.accuracy_score(yTrue, yPred) * 100
-error = 100 - accuracy
-print("Accuracy : ", accuracy)
-print("Error : ", error)
-
-confusion_mat = metrics.confusion_matrix(yTrue, yPred)
-print(confusion_mat)
-print(confusion_mat.ravel())
-
-print(metrics.classification_report(yTrue, yPred))
-```
-
-
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-78-683865bb6e21> in <module>
-    ----> 1 yPreds = model.predict(X_test)
-          2 yPred = np.argmax(yPreds, axis=1)
-          3 yTrue = np.argmax(Y, axis=1)
-          4 
-          5 accuracy = metrics.accuracy_score(yTrue, yPred) * 100
-
-
-    NameError: name 'model' is not defined
-
+<div align="center">
+  <img src="./img/output_19_1.png" width="400">  
+  <p>test_set timeserise.</p>
+</div>
