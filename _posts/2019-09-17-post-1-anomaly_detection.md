@@ -209,49 +209,7 @@ scaler = MinMaxScaler()
 tdf[[feature]] = scaler.fit_transform(tdf[[feature]])
 print( feature + '스케일변경')
 tdf
-
 ```
-
-    /usr/local/lib/python3.7/site-packages/ipykernel_launcher.py:7: SettingWithCopyWarning:
-    
-    
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-    
-
-
-    co스케일변경
-
-
-    /usr/local/lib/python3.7/site-packages/pandas/core/indexing.py:543: SettingWithCopyWarning:
-    
-    
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
-    
-
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-
 
 
 ```python
@@ -268,12 +226,7 @@ plt.plot(test_set, color='b')
 ```
 
 
-
-
-    [<matplotlib.lines.Line2D at 0x7f6b086fbf28>]
-
-
-
+![Imgur](img/output_10_1.png)
 
 ![png](output_10_1.png)
 
