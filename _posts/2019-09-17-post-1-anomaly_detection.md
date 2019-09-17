@@ -321,12 +321,8 @@ plt.show()
 ![ex_screenshot](./../img/output_19_0.png)
 ![ex_screenshot](./../img/output_19_1.png)
 
-<div align="center">
-  <img src="img/output_19_0.png" width="800">  
-  <p>test_set timeserise.</p>
-</div>
 
 <div align="center">
-  <img src="img/output_19_1.png" width="800">  
+  <img src="./../img/output_19_1.png" width="800">  
   <p>test_set timeserise.</p>
 </div>
