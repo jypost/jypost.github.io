@@ -225,6 +225,9 @@ plt.figure(figsize=(25,5))
 plt.plot(test_set, color='b')
 ```
 
+
+![ex_screenshot](./../img/output_10_1.png)
+
 <div align="center">
   <img src="./../img/output_10_1.png" width="800">  
   <p>test_set timeserise.</p>
