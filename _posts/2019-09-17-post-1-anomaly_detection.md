@@ -272,8 +272,8 @@ print("test45.shape",test45.shape)
 
 ```python
 from keras.models import load_model
-model1 = load_model("/data/home/1004207/SOCAR/weights/feature_"+str(feature)+"_sequence_"+str(sequence1)+".h5")
-model2 = load_model("/data/home/1004207/SOCAR/weights/feature_"+str(feature)+"_sequence_"+str(sequence2)+".h5")
+model1 = load_model("/data/weights/feature_"+str(feature)+"_sequence_"+str(sequence1)+".h5")
+model2 = load_model("/data/weights/feature_"+str(feature)+"_sequence_"+str(sequence2)+".h5")
 print("sequence1", sequence1)
 print("sequence2", sequence2)
 ```
