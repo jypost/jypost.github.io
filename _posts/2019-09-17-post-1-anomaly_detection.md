@@ -1,5 +1,5 @@
 ---
-title: "Anomaly detection Predict"
+title: "Predict"
 date: 2019-9-17 15:09:28 -0400
 categories: DeepLearning
 tags:
