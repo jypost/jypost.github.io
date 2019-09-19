@@ -1,7 +1,7 @@
 ---
 title: "오프라인 플로팅"
 date: 2019-8-29 15:09:28 -0400
-categories: Deep Learning
+categories: DeepLearning
 tags:
 - Data Visualizing
 - Basic
