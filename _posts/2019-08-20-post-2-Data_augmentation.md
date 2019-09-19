@@ -1,12 +1,12 @@
 ---
 title: "데이터가 부족할땐, Data_augmentation"
 date: 2019-8-20 20:09:28 -0400
-categories: Deep Learning
+categories: DeepLearning
 tags:
 - GAN
 - Generative model
 - Data augmentation
-- Data preprocessing
+- preprocessing
 ---
 
 # <span style="color:black">Data_augmentation</span><br>
