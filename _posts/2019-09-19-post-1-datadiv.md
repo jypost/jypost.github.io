@@ -4,9 +4,9 @@ date: 2019-9-19 15:09:28 -0400
 categories: DeepLearning
 tags:
 - Preprocessing
-- LSTM
-- RNN
-- Predict model
+- data load
+- data save
+- data
 ---
 
 # 데이터 쪼개기
