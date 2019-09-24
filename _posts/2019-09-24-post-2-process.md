@@ -16,8 +16,8 @@ tags:
     * from creatTestData import *
     * load_with_dfList(id_list)
 
-<p style="color:#C83821; font-size:2rem; line-height: 3rem; font-weight: normal; margin-top: 10rem; margin-bottom: 10rem; text-align: left; opacity: 1;"> 1.테스트할 차량들의 DataFrame을 <strong style="color:#4263B9; opacity: 1;">아래 function</strong>으로 생성<br>
-<span style="color:black; font-size:4rem; line-height: 7rem; margin-left: 20rem;">'df = loadTestSet(test_id)'</span><br>
+<p style="color:#C83821; font-size:1.4rem; line-height: 3rem; font-weight: normal; margin-top: 10rem; margin-bottom: 10rem; text-align: left; opacity: 1;"> 1.테스트할 차량들의 DataFrame을 <strong style="color:#4263B9; opacity: 1;">아래 function</strong>으로 생성<br>
+<span style="color:black; font-size:2rem; line-height: 7rem; margin-left: 20rem;">'df = loadTestSet(test_id)'</span><br>
 <span style="margin-left: 70rem;">테스트 차량들의 id에 따른 동적 생성</span></p>
 
 <p style="color:black; font-size:1.4rem; line-height: 3rem; font-weight: normal; margin-top: 10rem; margin-bottom: 10rem; text-align: right; opacity: 0.7; margin-left: 20rem;"> 
