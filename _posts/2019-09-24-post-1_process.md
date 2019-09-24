@@ -1,6 +1,6 @@
 ---
-title: "cvalidation processing"
-date: 2019-9-19 15:09:28 -0400
+title: "Validation processing"
+date: 2019-9-24 15:09:28 -0400
 categories: DeepLearning
 tags:
 - Preprocessing
