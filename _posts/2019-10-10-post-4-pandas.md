@@ -140,6 +140,8 @@ df
   </tbody>
 </table>
 </div>
+
+
 ```python
 '''
     column명의 앞 두(N) 글자를 조건으로 
@@ -204,11 +206,6 @@ df
   </tbody>
 </table>
 </div>
-
-
-
-
-
 
 
 
