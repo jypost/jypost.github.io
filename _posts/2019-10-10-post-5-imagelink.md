@@ -10,6 +10,9 @@ tags:
 ---
 
 
+![output_19_1.png](https://github.com/jypost/jypost.github.io/blob/master/img/sample_img_1010.png?raw=true)
+
+
 Markdown에서 ' ! + 대괄호[] + (이미지주소) ' 
 이미지 주소는 리소스 폴더에 이미지를 업로드 한 후, 해당 이미지 파일을 선택하여 마우스 우클릭 > 이미지 주소 복사하여 쓰면 된다.
 
