@@ -28,6 +28,46 @@ df1 = df1[df1['A'].isin(droplist)] #A에서 droplist가 포함되지 않은 모�
 df1
 ```
 
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>d</th>
+      <th>e</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>b22</td>
+      <td>17</td>
+      <td>16</td>
+      <td>16</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
 ## 2. 특정 이름을 가진 column을 제거
 ```python
 '''
@@ -117,6 +157,8 @@ cols = [c for c in df.columns if c.lower()[:2] != 'pm']
 df = df[cols]
 df
 ```
+
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -168,43 +210,7 @@ df
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-      <th>d</th>
-      <th>e</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>b22</td>
-      <td>17</td>
-      <td>16</td>
-      <td>16</td>
-      <td>16</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
 
 ## 특정 컬럼에서 같은 값이 중복되는 갯수 확인
