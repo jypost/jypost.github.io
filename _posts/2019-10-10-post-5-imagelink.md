@@ -15,23 +15,23 @@ Markdown에서 ' ! + 대괄호[] + (이미지주소) '
 
 
 
-- '[output_19_1.png](https://github.com/jypost/jypost.github.io/blob/master/img/output_19_1.png?raw=true)'<br>앞에 느낌표 생략<br>
-![output_19_1.png](https://github.com/jypost/jypost.github.io/blob/master/img/output_19_1.png?raw=true)
+- '[output_19_1.png](https://github.com/jypost/jypost.github.io/blob/master/img/sample_img_1010.png?raw=true)'<br>앞에 느낌표 생략<br>
+![output_19_1.png](https://github.com/jypost/jypost.github.io/blob/master/img/sample_img_1010.png?raw=true)
 
 
-- '[Alt text](https://github.com/jypost/jypost.github.io/blob/master/img/output_19_1.png?raw=true)'<br>앞에 느낌표 생략<br>
-![Alt text](https://github.com/jypost/jypost.github.io/blob/master/img/output_19_1.png?raw=true)
+- '[Alt text](https://github.com/jypost/jypost.github.io/blob/master/img/sample_img_1010.png?raw=true)'<br>앞에 느낌표 생략<br>
+![Alt text](https://github.com/jypost/jypost.github.io/blob/master/img/sample_img_1010.png?raw=true)
 
 
-- '[imgur](https://github.com/jypost/jypost.github.io/blob/master/img/output_19_1.png?raw=true)'<br>앞에 느낌표 생략<br>
-![imgur](https://github.com/jypost/jypost.github.io/blob/master/img/output_19_1.png?raw=true)
+- '[imgur](https://github.com/jypost/jypost.github.io/blob/master/img/sample_img_1010.png?raw=true)'<br>앞에 느낌표 생략<br>
+![imgur](https://github.com/jypost/jypost.github.io/blob/master/img/sample_img_1010.png?raw=true)
 
 
-- '[결론은 괄호안에 아무거나넣어도 된다는 거](https://github.com/jypost/jypost.github.io/blob/master/img/output_19_1.png?raw=true)'<br>앞에 느낌표 생략<br>
-![ㅇㅇ](https://github.com/jypost/jypost.github.io/blob/master/img/output_19_1.png?raw=true)
+- '[결론은 괄호안에 아무거나넣어도 된다는 거](https://github.com/jypost/jypost.github.io/blob/master/img/sample_img_1010.png?raw=true)'<br>앞에 느낌표 생략<br>
+![ㅇㅇ](https://github.com/jypost/jypost.github.io/blob/master/img/sample_img_1010.png?raw=true)
 
 
-- '[괄호안에 안넣어도 된다는 거 느낌표만 있으면 링크 걸린다.](https://github.com/jypost/jypost.github.io/blob/master/img/output_19_1.png?raw=true)'<br>앞에 느낌표 생략<br>
-![](https://github.com/jypost/jypost.github.io/blob/master/img/output_19_1.png?raw=true)
+- '[괄호안에 안넣어도 된다는 거 느낌표만 있으면 링크 걸린다.](https://github.com/jypost/jypost.github.io/blob/master/img/sample_img_1010.png?raw=true)'<br>앞에 느낌표 생략<br>
+![](https://github.com/jypost/jypost.github.io/blob/master/img/sample_img_1010.png?raw=true)
 
 
