@@ -4,6 +4,7 @@ date: 2019-10-10 15:09:28 -0400
 categories: DeepLearning
 tags:
 - EDA
+- Preprocessing
 - Data Visualizing
 - 데이터 시각화
 - Graph
