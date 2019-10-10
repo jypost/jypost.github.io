@@ -10,7 +10,7 @@ tags:
 ---
 
 # Pandas 주요 기능 정리
-## Dataframe 에서 특정 컬럼의 값에 따른 데이터 분류
+## 1. Df에서 특정 컬럼의 반복되는 값에 따른 데이터 분류
 
 ```python
 #임의의 데이터 프레임 생성
@@ -27,6 +27,52 @@ df1 = df1[df1['A'].isin(droplist)] #A에서 droplist가 포함되지 않은 모�
 
 df1
 ```
+
+## 2. 특정 이름을 가진 column을 제거
+```python
+'''
+    특정 이름을 가진 column을 제거할때 응용이 많은 코드
+'''
+
+data = {
+            'pm25' : np.arange(5),
+            'co' : np.arange(5, 10),
+            'pm10' : np.arange(10, 15),
+}
+df = pd.DataFrame(data)
+df
+```
+pm25	co	pm10
+0	0	5	10
+1	1	6	11
+2	2	7	12
+3	3	8	13
+4	4	9	14
+
+```python
+'''
+    column명의 앞 두(N) 글자를 조건으로 
+    선택 또는 선택해제된 Data 파일 생성
+'''
+
+data = {
+            'pm25' : np.arange(5),
+            'co' : np.arange(5, 10),
+            'pm10' : np.arange(10, 15),
+}
+
+df = pd.DataFrame(data=data)
+cols = [c for c in df.columns if c.lower()[:2] != 'pm']
+df = df[cols]
+df
+```
+	co
+0	5
+1	6
+2	7
+3	8
+4	9
+
 
 
 
