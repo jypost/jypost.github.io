@@ -14,12 +14,17 @@ tags:
 ---
 
 ### 데이터 타입과 시계열 차트 
-  - 같은 에
 
-같은 
 같은 데이터를 Visualizing 할때,
 데이터 타입이 DataFrame이냐 List냐 에따라 아래와 같이 차트가 다르게 나타난다
 이유는 아직 모르겠다 더 파보면 알겠지
+
+
+![png](https://github.com/jypost/jypost.github.io/blob/master/img/output_6_1.png?raw=true)
+원본 데이터 셋 /List타입 길이 확인 :  512998
+<br>
+![png](https://github.com/jypost/jypost.github.io/blob/master/img/output_7_1.png?raw=true)
+원본 데이터 셋 / DataFrame타입 shape 확인 :  (512998,)
 
 
 ```python
