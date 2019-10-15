@@ -18,6 +18,7 @@ tags:
 같은 데이터를 Visualizing 할때,
 데이터 타입이 DataFrame이냐 List냐 에따라 아래와 같이 차트가 다르게 나타난다
 이유는 아직 모르겠다 더 파보면 알겠지
+<span>이거 DataFrame['feature'].values로 </span>
 
 
 ![png](https://github.com/jypost/jypost.github.io/blob/master/img/output_6_1.png?raw=true)
