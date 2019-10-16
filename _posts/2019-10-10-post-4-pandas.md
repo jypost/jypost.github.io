@@ -337,14 +337,40 @@ def df_column_set(data): #data는 최종 데이터 프레임
                                                ])
     return df_reloc
 ```
+## 데이터 프레임 NAN값 갯수 확인
+```python
+df.isnull().sum()
+---
+output
+col1    0
+col2    0
+col3    0
+col4    0
+col5    0
+dtype: int64
+```
 
 ## 인덱스 초기화
+```python
+
+```
 ## TEST 데이터프레임 생성
+```python
+
+```
 ## 데이터 프레임 합치기
+```python
+
+```
 ### 데이터 프레임 concat 할때 유의사항
   - axis=1 로 concat할때, 두 DataFrame간 index가 안맞으면, NAN값이 생기므로 주의할것
 ## 인덱스 순서 바꾸기
+```python
+```
 ## 데이터 프레임 column 삭제
+```python
 Drop
-## 데이터 프레임 NAN값 갯수 확인
+```
+
+
 
