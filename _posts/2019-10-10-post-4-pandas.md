@@ -302,7 +302,41 @@ fff.shape
 (85800, 16)
 ```
 
+## 특정범위 선택
+```python
 
+threshold=44.07
+
+df_A_count = df_A_final[(df_A_final['pm'] > threshold)]
+df_C_count = df_C_final[(df_C_final['pm'] > threshold)]
+df_M_count = df_M_final[(df_M_final['pm'] > threshold)]
+
+
+# Bot50
+BOTTOM = df_all[(df_all['pm'] > 0.) & (df_all['pm_dif'] >= 0.01)]
+Bot50 = BOTTOM.sort_values(by='pm_dif', ascending=True).head(50)
+
+# Top50
+Top50 = df_all.sort_values(by='pm_dif', ascending=False).head(50)
+
+```
+
+## 데이터프레임 정렬
+
+```python
+def df_column_set(data): #data는 최종 데이터 프레임
+    df_reloc = pd.DataFrame(data=data, columns=['time',
+                                                'id',
+                                                'pm25',
+                                                'co',
+                                                'pm25_pred',
+                                                'co_pred',
+                                                'pm25_dif',
+                                                'co_dif',
+                                                'type',
+                                               ])
+    return df_reloc
+```
 
 ## 인덱스 초기화
 ## TEST 데이터프레임 생성
