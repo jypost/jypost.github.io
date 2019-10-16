@@ -295,6 +295,11 @@ def listTodf(list, data): #list를 입력으로 해당 리스트의 변수에 �
         print(x+' DataFrame이 생성되었습니다. '+x+'.shape :', v.shape)
         num += 1
 
+
+# 특정 ID만 찍어서 데이터 프레임으로
+fff = df[df['id'].isin(['b41'])]
+fff.shape
+(85800, 16)
 ```
 
 
