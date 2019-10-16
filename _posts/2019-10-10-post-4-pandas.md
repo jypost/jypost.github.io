@@ -234,3 +234,54 @@ df1.A.value_counts()
   b20    4<br>
   b21    4<br>
   Name: A, dtype: int64
+  
+
+## 데이터 프레임 발라내기 column select 
+```python
+
+#사용할 column만
+df_b4A = df_b4A[['time','id','pm25','co','type']]
+df_b36 = df_b36[['time','id','pm25','co','type']]
+print(df_b4A.shape)
+print(df_b36.shape)
+
+
+data = {
+            'pm25' : np.arange(5),
+            'co' : np.arange(5, 10),
+            'pm10' : np.arange(10, 15),
+}
+
+
+df = pd.DataFrame(data=data)
+
+# 데이터 프레임 이렇게 잡으면 array로 잡힌다.
+ddd = df['co']
+ddd
+
+# 데이터 프레임 이렇게 잡으면 데이터프레임으로 잡힌다.
+ddd1 = df[['co']]
+ddd1
+
+
+```
+
+## array를 list로 
+```python
+
+# array를 list로
+ddd = ddd.to_list()
+ddd
+
+```
+
+## 인덱스 초기화
+## TEST 데이터프레임 생성
+## 데이터 프레임 합치기
+### 데이터 프레임 concat 할때 유의사항
+  - axis=1 로 concat할때, 두 DataFrame간 index가 안맞으면, NAN값이 생기므로 주의할것
+## 인덱스 순서 바꾸기
+## 데이터 프레임 column 삭제
+Drop
+## 데이터 프레임 NAN값 갯수 확인
+
