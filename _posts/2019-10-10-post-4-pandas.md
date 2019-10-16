@@ -290,7 +290,9 @@ def listTodf(list, data): #list를 입력으로 해당 리스트의 변수에 �
     num = 0 
     for i in list: #i는 변수명
         x = '{}'.format(i) #리스트의 str로 변수 생성 (각각)
-        setattr(mod, x, data[data['id'].isin([list[num]])]) #setattr(object, name, value) 조건으로 데이터프레임 생성
+        v = data[data['id'].isin([list[num]])]
+        setattr(mod, x, v) #setattr(object, name, value) 조건으로 데이터프레임 생성
+        print(x+' DataFrame이 생성되었습니다. '+x+'.shape :', v.shape)
         num += 1
 
 ```
