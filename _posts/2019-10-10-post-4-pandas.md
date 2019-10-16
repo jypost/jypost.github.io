@@ -275,6 +275,28 @@ ddd
 
 ```
 
+## list의 원소인 str을 변수로 데이터프레임 반복 생성 (엄청 많이씀)
+```python
+
+#리스트를 변수로 생성 
+selectlist = ['A','B','C']
+
+# 아래 함수는 ID가 여러개인 전체 데이터 프레임에서 
+# 각 아이디별로 데이터 프레임을 생성하는 함수 입니다.
+# 생성할 ID_list와 ID_list에서 생성된 각각의 변수에 저장할 data를 인자로 받습니다.
+
+def listTodf(list, data): #list를 입력으로 해당 리스트의 변수에 데이터프레임 생성 / data는 생성할 데이터 프레임 전체
+    mod = sys.modules[__name__]
+    num = 0 
+    for i in list: #i는 변수명
+        x = '{}'.format(i) #리스트의 str로 변수 생성 (각각)
+        setattr(mod, x, data[data['id'].isin([list[num]])]) #setattr(object, name, value) 조건으로 데이터프레임 생성
+        num += 1
+
+```
+
+
+
 ## 인덱스 초기화
 ## TEST 데이터프레임 생성
 ## 데이터 프레임 합치기
