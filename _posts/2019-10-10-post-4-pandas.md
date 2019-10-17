@@ -377,4 +377,44 @@ Drop
 
 ## 데이터 프레임을 리스트로 만들고, 해당 리스트를 for문을 돌려 편집하면, 각 원소의 값에 변화가 없다
 ## 꼭 확인
+```python
+아래처럼 하면 된다. 나중에 정리
 
+#아이디별 생성한 데이터 프레임 원본 리스트
+selectdf = [b36, b41, b42, b33, b4A, b32]
+
+# 인덱스 리셋 리스트 (변수생성할떄 씀)
+resetdf = ['b36','b41','b42','b33','b4A','b32']
+
+# 1. 컬럼을 먼저 정리하고, 
+def reset_column(resetdf, selectdf): #resetdf = 생성변수 str 리스트 / selectdf는 원본 데이터 프레임 리스트
+    mod = sys.modules[__name__]
+    num = 0
+    for i in resetdf: #i는 생성될 변수명 
+        x = '{}'.format(i) #리스트의 str로 변수 생성 (각각)
+        v = selectdf[num][['time','id','pm25','co','type']] 
+        setattr(mod, x, v) #setattr(object, name, value) 조건으로 df 생성
+        print('\n',v.head())
+        num += 1        
+
+# 2. 인덱스를 리셋한다.         
+def reset_index(resetdf, selectdf): #resetdf = 생성변수 str 리스트 / selectdf는 원본 데이터 프레임 리스트
+    mod = sys.modules[__name__]
+    num = 0
+    for i in resetdf: #i는 생성될 변수명 
+        x = '{}'.format(i) #리스트의 str로 변수 생성 (각각)
+        v = selectdf[num].reset_index(drop=True)
+        setattr(mod, x, v) #setattr(object, name, value) 조건으로 df 생성
+        print('\n',v.head())
+        num += 1
+
+# 1. 컬럼을 먼저 정리하고, 
+reset_column(resetdf, selectdf)
+selectdf = [b36, b41, b42, b33, b4A, b32] # 아래 for문으로 데이터 조작위해서 
+
+# 2. 인덱스를 리셋한다. 
+reset_index(resetdf, selectdf)
+
+b42.head()
+
+```
