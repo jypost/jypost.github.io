@@ -263,6 +263,8 @@ ddd
 ddd1 = df[['co']]
 ddd1
 
+# column 내에서 최대값
+
 
 ```
 
@@ -352,7 +354,8 @@ dtype: int64
 
 ## 인덱스 초기화
 ```python
-
+#인덱스 리셋 이거안하면 뒤에 concat할때 꼬인다.
+df_C = df_C.reset_index(drop=True)
 ```
 ## TEST 데이터프레임 생성
 ```python
