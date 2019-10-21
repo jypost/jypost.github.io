@@ -28,43 +28,30 @@ df1 = df1[df1['A'].isin(droplist)] #A에서 droplist가 포함되지 않은 모�
 df1
 ```
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
 </style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>A</th>
-      <th>B</th>
-      <th>C</th>
-      <th>d</th>
-      <th>e</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>b22</td>
-      <td>17</td>
-      <td>16</td>
-      <td>16</td>
-      <td>16</td>
-    </tr>
-  </tbody>
+<table class="tg">
+  <tr>
+    <th class="tg-baqh"></th>
+    <th class="tg-baqh">a</th>
+    <th class="tg-baqh">b</th>
+    <th class="tg-baqh">c</th>
+    <th class="tg-baqh">d</th>
+    <th class="tg-baqh">e</th>
+  </tr>
+  <tr>
+    <td class="tg-baqh">0</td>
+    <td class="tg-baqh">b22</td>
+    <td class="tg-baqh">17</td>
+    <td class="tg-baqh">16</td>
+    <td class="tg-baqh">16</td>
+    <td class="tg-baqh">16</td>
+  </tr>
 </table>
-</div>
 
 
 
