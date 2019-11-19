@@ -354,7 +354,9 @@ df_C = df_C.reset_index(drop=True)
 ```
 ## 데이터 프레임 합치기
 ```python
-
+#가로축으로 입력 순서대로 합치기
+newdf = pd.concat([df1, df2], axis=1)
+newdf
 ```
 ### 데이터 프레임 concat 할때 유의사항
   - axis=1 로 concat할때, 두 DataFrame간 index가 안맞으면, NAN값이 생기므로 주의할것
