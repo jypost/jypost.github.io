@@ -10,3 +10,77 @@ type: about
 포스트 관련하여 궁금한 내용은 메일로 문의 주시면,<br>
 특별히 바쁘지 않은 기간에는(?) 빠른 회신 드리겠습니다.:)<br>
 jypost@naver.com
+
+Profile
+
+Insightful market research and strategic user experience design professional with over 10 years of experience over various business industries.
+
+pangyo, south korea 
+
+jypost@naver.com
+
+​
+
+SK planet ( present )
+
+ - Deep learning Model developer for AI Solution
+ 
+ - SK Platform UX
+
+ - Smart Home UX 
+
+ - T map UX
+
+ - T map public transportation UX
+
+​
+
+LG Electronics
+
+ - Design center HA lab interaction design Team
+
+ - Home Appliance Lab UX standard guideline Define
+
+ - smart washer UX
+
+ - Styler UX 
+
+​
+
+Digital aria
+
+ - UX design team
+
+ - NTT PLALA TV UX
+
+ - Hyundai Kia motors Cluster UX
+
+ - Kenwood AVN UX
+
+ - NEC Dual tablet Pc Application UX 
+
+​
+
+D'one lab
+
+ - Co-founder / UX lead
+
+ - Korea subway Application UX
+
+ - Honey pop UX
+
+ - maxian PMP UX E1
+
+​
+
+ETC. 
+
+ - Dig The Ground UX and programming
+
+ - DTG 10 days
+
+ - UX and interaction using json
+
+ - NUGU VUX and User test
+
+ - pages UX and programming
