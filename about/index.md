@@ -17,20 +17,14 @@ Insightful market research and strategic user experience design professional wit
 
 pangyo, south korea 
 
-jypost@naver.com
-
 ​
 
-SK planet ( present )
+SK planet 
 
- - Deep learning Model developer for AI Solution
- 
+ - Deep learning Model developer for AI Solution ( present )
  - SK Platform UX
-
  - Smart Home UX 
-
  - T map UX
-
  - T map public transportation UX
 
 ​
@@ -38,11 +32,8 @@ SK planet ( present )
 LG Electronics
 
  - Design center HA lab interaction design Team
-
  - Home Appliance Lab UX standard guideline Define
-
  - smart washer UX
-
  - Styler UX 
 
 ​
@@ -50,13 +41,9 @@ LG Electronics
 Digital aria
 
  - UX design team
-
  - NTT PLALA TV UX
-
  - Hyundai Kia motors Cluster UX
-
  - Kenwood AVN UX
-
  - NEC Dual tablet Pc Application UX 
 
 ​
@@ -64,23 +51,16 @@ Digital aria
 D'one lab
 
  - Co-founder / UX lead
-
  - Korea subway Application UX
-
  - Honey pop UX
-
  - maxian PMP UX E1
 
 ​
 
 ETC. 
 
- - Dig The Ground UX and programming
-
- - DTG 10 days
-
- - UX and interaction using json
-
- - NUGU VUX and User test
-
- - pages UX and programming
+ - UX and programming
+  - Launched 'sudoku' on the App Store
+  - Launched '부동산 똑똑' on the App Store
+  - Launched 'Dig The Ground' on the App Store
+  - UX and interaction using json
