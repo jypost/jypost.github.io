@@ -15,32 +15,25 @@ tags:
 ```python
   pip freeze
 ```
+```python
+json5==0.8.5
+jsonschema==3.0.2
+jupyter-client==5.3.3
+jupyter-core==4.5.0
+jupyter-tensorboard==0.1.10
+jupyterhub==1.0.0
+jupyterlab==1.0.2
+jupyterlab-server==1.0.0
+jupytext==1.2.4
+Keras==2.3.1
+Keras-Applications==1.0.6
+Keras-Preprocessing==1.0.5
+```
 
-<style type="text/css">
-.tg {border-collapse:collapse;
-  border-spacing:0;
-  border-color:#ccc;
-  height:1.4rem;
-  }
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
-.tg .tg-baqh{text-align:center;vertical-align:top}
-</style>
-<table class="tg">
-  <tr>
-    <th class="tg-baqh"></th>
-    <th class="tg-baqh">a</th>
-    <th class="tg-baqh">b</th>
-    <th class="tg-baqh">c</th>
-    <th class="tg-baqh">d</th>
-    <th class="tg-baqh">e</th>
-  </tr>
-  <tr>
-    <td class="tg-baqh">0</td>
-    <td class="tg-baqh">b22</td>
-    <td class="tg-baqh">17</td>
-    <td class="tg-baqh">16</td>
-    <td class="tg-baqh">16</td>
-    <td class="tg-baqh">16</td>
-  </tr>
-</table>
+## 2. 패키지 설치
+ 
+ - plotly(설치패키지명 예시)
+ 
+```python
+  # !sudo pip install plotly
+```
