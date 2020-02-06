@@ -360,13 +360,57 @@ newdf
 ```
 ### 데이터 프레임 concat 할때 유의사항
   - axis=1 로 concat할때, 두 DataFrame간 index가 안맞으면, NAN값이 생기므로 주의할것
+  
 ## 인덱스 순서 바꾸기
 ```python
 ```
+
 ## 데이터 프레임 column 삭제
+- axis=0은 row을, axis=1은 column을 의미
 ```python
-Drop
+df = df.drop("A", axis=1)
+# df = df.drop(columns="A")
+print(df)
+
+# 출력
+#      B       C  D  E
+# c1  0  300  0  0
+# c2  0  301  0  0
+# c3  0  302  0  0
+# c4  0  303  0  0
+# c5  0  304  0  0
+
+# 여러개 삭제시
+df = df.drop(["A", "C"], axis=1)
+# df = df.drop(columns=["A", "C"])
+print(df)
+
+# 출력
+#      B  D  E
+# c1  0  0  0
+# c2  0  0  0
+# c3  0  0  0
+# c4  0  0  0
+# c5  0  0  0
 ```
+
+## 데이터 프레임 row 삭제
+- axis=0은 row을, axis=1은 column을 의미
+```python
+df = df.drop("c1") # df = df.drop("c1", axis=0)
+# df = df.drop(index="c1")
+print(df)
+
+# 출력
+#          A  B       C  D  E
+# c2  101  0  301  0  0
+# c3  102  0  302  0  0
+# c4  103  0  303  0  0
+# c5  104  0  304  0  0
+
+```
+
+
 
 ## 데이터 프레임을 리스트로 만들고, 해당 리스트를 for문을 돌려 편집하면, 각 원소의 값에 변화가 없다
 ## 꼭 확인
