@@ -366,7 +366,8 @@ newdf
 ```
 
 ## 데이터 프레임 column 삭제
-- axis=0은 row을, axis=1은 column을 의미
+-axis=0은 row을, axis=1은 column을 의미
+
 ```python
 df = df.drop("A", axis=1)
 # df = df.drop(columns="A")
@@ -392,10 +393,12 @@ print(df)
 # c3  0  0  0
 # c4  0  0  0
 # c5  0  0  0
+
 ```
 
 ## 데이터 프레임 row 삭제
-- axis=0은 row을, axis=1은 column을 의미
+-axis=0은 row을, axis=1은 column을 의미
+
 ```python
 df = df.drop("c1") # df = df.drop("c1", axis=0)
 # df = df.drop(index="c1")
