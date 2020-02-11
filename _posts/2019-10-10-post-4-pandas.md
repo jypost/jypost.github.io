@@ -314,6 +314,14 @@ Top50 = df_all.sort_values(by='pm_dif', ascending=False).head(50)
 
 ```
 
+## 특정날짜범위 선택
+```python
+sen_tm    172746 non-null datetime64[ns]
+
+testDfWeb = webdf[(webdf['sen_tm'] < '2019-11-14 00:01') & (webdf['sen_tm'] > '2019-10-14 00:00')]
+```
+
+
 ## 데이터프레임 정렬
 
 ```python
