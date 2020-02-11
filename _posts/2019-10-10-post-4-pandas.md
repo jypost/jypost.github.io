@@ -350,7 +350,9 @@ df_C = df_C.reset_index(drop=True)
 ```
 
 ## 데이터 로컬 저장 
+
 - csv로 저장 
+
 ```python
 datapath = os.getcwd() 
 
@@ -364,7 +366,6 @@ def saveAsCSV(data, savename):
 - excel로 저장 
 
 ```python
-
 datapath = os.getcwd() 
 
 def saveAsxls(data, name):
