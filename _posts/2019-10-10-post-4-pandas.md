@@ -348,6 +348,40 @@ dtype: int64
 #인덱스 리셋 이거안하면 뒤에 concat할때 꼬인다.
 df_C = df_C.reset_index(drop=True)
 ```
+
+## 데이터 로컬 저장 
+- csv로 저장 
+```python
+datapath = os.getcwd() 
+
+def saveAsCSV(data, savename):
+    save_dir = datapath+'/data/'
+    if not os.path.exists(save_dir):
+        os.mkdir(save_dir)
+    
+    data.to_csv(save_dir+savename+".csv", header=True, index=False)
+```
+- excel로 저장 
+
+```python
+
+datapath = os.getcwd() 
+
+def saveAsxls(data, name):
+    save_dir = datapath+'/data/'
+    if not os.path.exists(save_dir):
+        os.mkdir(save_dir)
+    
+    data.to_excel(save_dir+name+".xls", sheet_name='Sheet1', index=False)
+```
+
+## 현재 경로 얻기
+```python
+  datapath = os.getcwd() 
+  datapath
+  ---
+  Out '/home/jinyoungpark/KTR/preprocessing'
+```
 ## TEST 데이터프레임 생성
 ```python
 
