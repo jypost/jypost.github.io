@@ -382,7 +382,7 @@ def saveAsxls(data, name):
   datapath = os.getcwd() 
   datapath
   ---
-  Out '/home/jinyoungpark/KTR/preprocessing'
+  Out '/home/preprocessing'
 ```
 ## TEST 데이터프레임 생성
 ```python
