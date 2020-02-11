@@ -384,6 +384,19 @@ def saveAsxls(data, name):
   ---
   Out '/home/preprocessing'
 ```
+
+## columns 선택
+```python
+#컬럼선택
+df = traindata[['센서Code', 'PM10 (μg/㎥)', 'PM2.5 (μg/㎥)', 'Temp (℃)', 'Humid (%)', 'Time']]
+```
+
+## columns 변경
+```python
+#컬럼명 변경
+df.columns = ['sensorid', 'PM10', 'PM25', 'temp', 'humid', 'tm']
+```
+
 ## TEST 데이터프레임 생성
 ```python
 
