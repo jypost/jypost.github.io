@@ -351,6 +351,20 @@ col5    0
 dtype: int64
 ```
 
+## 특정 값 다른값으로 변경 '-' -> 0
+```python
+
+ddd = [c for c in testDfWeb['PM25'] if c.lower()[:2] == '-']
+ddd
+out : ['-', '-', '-', '-', '-', '-', '-', '-']
+
+#NAN값이 '-'로 입력되어있어 float64 변환이 안되어 아래와 같이 변환함
+
+testDfWeb['PM25'] = testDfWeb['PM25'].replace('-', 0)
+testDfWeb['PM25'] = testDfWeb['PM25'].astype('float64')
+
+```
+
 ## 인덱스 초기화
 ```python
 #인덱스 리셋 이거안하면 뒤에 concat할때 꼬인다.
