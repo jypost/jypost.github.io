@@ -343,6 +343,19 @@ test = series.sort_index()
 
 ```
 
+## 결측값에 str데이터('-')가 입력되어 있을때, NaN값으로 대체하기
+
+```python
+df['PM10'] = df['PM10'].replace('-', np.nan)
+
+out:
+   sen_id	          sen_tm	temp	humid	PM10	PM25  
+0	SGO-016	2020-02-12 10:38	  NaN	NaN	NaN	NaN
+1	SGO-016	2020-02-12 10:37	  NaN	NaN	NaN	NaN
+2	SGO-016	2020-02-12 10:36	  NaN	NaN	NaN	NaN
+3	SGO-016	2020-02-12 10:35	  NaN	NaN	NaN	NaN
+4	SGO-016	2020-02-12 10:34	  NaN	NaN	NaN	NaN
+```
 
 ## 데이터프레임 정렬
 
