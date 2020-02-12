@@ -336,6 +336,14 @@ sen_id	sen_tm	temp	humid	PM10	PM25
 
 ```
 
+## Series Type 정렬
+
+```python
+test = series.sort_index()
+
+```
+
+
 ## 데이터프레임 정렬
 
 ```python
