@@ -420,6 +420,7 @@ df = df.set_index('tm') #tm컬럼을 index로 변경
 
 ## 인덱스 data Type 변경 
 ```python
+# index가 datetime 일 경우, dtype이 datetime이어야 차트에서 X축에 시간표시됨
 df.index = pd.to_datetime(df.index, format='%Y-%m-%d %H:%M:%S')
 print('index.dtype : ', df.index.dtype)
 
@@ -430,6 +431,52 @@ index.dtype :  datetime64[ns]
 ## 인덱스 name 변경 
 ```python
 df.index.name = 'tm'
+```
+
+## 차트에 한글 폰트 적용
+- 폰트 확인
+```python
+font_list = font_manager.findSystemFonts(fontpaths=None, fontext='ttf')
+font_list
+
+output:
+['/fonts/truetype/nanum/NanumSquareEB.ttf',
+...
+# 한글 폰트가 없을 경우 아래 명령으로 나눔폰트 설치 가능 
+# ! sudo apt-get install -y fonts-nanum fonts-nanum-coding fonts-nanum-extra
+```
+- 한글 적용 
+```python
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+%matplotlib inline   
+
+path = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf'
+fontprop = fm.FontProperties(fname=path, size=16)
+
+def showshow(Y, title, hlineN):
+    plt.figure(figsize=(20, 4))
+    plt.rcParams['axes.unicode_minus'] = False #음수 표시 가능하게 
+    ax = plt.gca()
+    ax.set_facecolor((1, 1, 1))
+#     ax.grid(False)
+    ax.set_ylabel(" prince $",x=0)
+    ax.set_xlabel(" 비트코인",y=0, fontproperties=fontprop)
+    ax.yaxis.set_label_coords(-0.05,0.5)
+    plt.rcParams["axes.facecolor"] = 'white'
+    plt.rc('font', family='NanumGothicOTF')
+#     plt.rcParams["font.family"] = u'AppleGothic' #한글 깨질때 
+#     plt.plot(Y_hat, marker='o', markersize=1, linestyle='None', color='c')
+    plt.plot(Y, marker='o', markersize=0.1, linestyle='-', color='#198AEC', alpha=1)
+    plt.xticks(np.arange(0, df.shape[0], step=365),["s_{:0<2d}".format(x) for x in df['date'].values], 
+#                fontproperties=BMDOHYEON, 
+               fontsize=10, 
+               rotation=0)
+    plt.axhline(y=hlineN, color='r', linewidth=1, alpha=0.7)
+    plt.legend(['Price','current Price'])
+    plt.title(str(title), fontproperties=fontprop)
+    plt.show()
 ```
 
 
