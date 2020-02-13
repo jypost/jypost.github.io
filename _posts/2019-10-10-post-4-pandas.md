@@ -406,6 +406,33 @@ testDfWeb['PM25'] = testDfWeb['PM25'].astype('float64')
 df_C = df_C.reset_index(drop=True)
 ```
 
+## 인덱스 기준으로 데이터 정렬
+```python
+df = df.sort_index()
+```
+
+## 인덱스 datetime으로 변경 
+```python
+#time index 설정
+df = df.set_index('tm') #tm컬럼을 index로 변경
+
+```
+
+## 인덱스 data Type 변경 
+```python
+df.index = pd.to_datetime(df.index, format='%Y-%m-%d %H:%M:%S')
+print('index.dtype : ', df.index.dtype)
+
+out :
+index.dtype :  datetime64[ns]
+```
+
+## 인덱스 name 변경 
+```python
+df.index.name = 'tm'
+```
+
+
 ## 데이터 로컬 저장 
 
 - csv로 저장 
