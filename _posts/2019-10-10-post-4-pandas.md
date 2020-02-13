@@ -262,11 +262,22 @@ ddd1
 ## array를 list로 
 ```python
 
-# array를 list로
+#array를 list로
 ddd = ddd.to_list()
 ddd
 
 ```
+
+## ndarray를 list로 
+```python
+
+#ndarray를 list로
+ddff = list(bbb['tm'].values)
+ddff
+
+```
+
+
 
 ## list의 원소인 str을 변수로 데이터프레임 반복 생성 (엄청 많이씀)
 ```python
