@@ -434,6 +434,7 @@ df.index.name = 'tm'
 ```
 
 ## 차트에 한글 폰트 적용
+
 - 폰트 확인
 ```python
 font_list = font_manager.findSystemFonts(fontpaths=None, fontext='ttf')
@@ -445,7 +446,8 @@ output:
 # 한글 폰트가 없을 경우 아래 명령으로 나눔폰트 설치 가능 
 # ! sudo apt-get install -y fonts-nanum fonts-nanum-coding fonts-nanum-extra
 ```
-- 한글 적용 
+
+- 한글 적용
 ```python
 import matplotlib as mpl
 import matplotlib.pyplot as plt
@@ -478,6 +480,7 @@ def showshow(Y, title, hlineN):
     plt.title(str(title), fontproperties=fontprop)
     plt.show()
 ```
+
 
 
 ## 데이터 로컬 저장 
