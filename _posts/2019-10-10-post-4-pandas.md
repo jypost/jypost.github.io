@@ -442,7 +442,7 @@ font_list
 
 output:
 ['/fonts/truetype/nanum/NanumSquareEB.ttf',
-...
+
 # 한글 폰트가 없을 경우 아래 명령으로 나눔폰트 설치 가능 
 # ! sudo apt-get install -y fonts-nanum fonts-nanum-coding fonts-nanum-extra
 ```
