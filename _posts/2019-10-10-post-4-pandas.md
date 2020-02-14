@@ -354,6 +354,20 @@ test = series.sort_index()
 
 ```
 
+## Time Series chart index
+
+```python
+#time Series는 index data type이 datetime이어야 차트에 날짜 찍힌다.
+df.index.dtype # index type 확인 ('o') object type 임
+df.index = pd.to_datetime(df.index, format='%Y-%m-%d %H:%M:%S')
+#df = df.set_index() index순으로 데이터 정렬
+print('index.dtype : ', df.index.dtype)
+
+out:
+index.dtype :  datetime64[ns]
+
+```
+
 ## 결측값에 str데이터('-')가 입력되어 있을때, NaN값으로 대체하기
 
 ```python
