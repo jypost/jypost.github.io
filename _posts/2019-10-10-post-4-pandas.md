@@ -382,6 +382,22 @@ out:
 4	SGO-016	2020-02-12 10:34	  NaN	NaN	NaN	NaN
 ```
 
+## 데이터 타입 변경
+
+```python
+#데이터 타입 변경 temp이후 전체row를 모두 float64로
+df.iloc[:,2:] = df.iloc[:,2:].astype('float64')
+
+out:
+   sen_id	          sen_tm	temp	humid	PM10	PM25  
+0	SGO-016	2020-02-12 10:38	  NaN	NaN	NaN	NaN
+1	SGO-016	2020-02-12 10:37	  NaN	NaN	NaN	NaN
+2	SGO-016	2020-02-12 10:36	  NaN	NaN	NaN	NaN
+3	SGO-016	2020-02-12 10:35	  NaN	NaN	NaN	NaN
+4	SGO-016	2020-02-12 10:34	  NaN	NaN	NaN	NaN
+
+```
+
 ## 데이터프레임 정렬
 
 ```python
