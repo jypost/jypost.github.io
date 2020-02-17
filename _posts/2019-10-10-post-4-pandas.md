@@ -462,6 +462,14 @@ df = df.resample('1T').mean()
 <span style="color:#363636; font-size:2pt; margin-left: 1.5rem;">    * Q-JAN: 각 분기의 첫달의 마지막 날<br></span>
 <span style="color:#363636; font-size:2pt; margin-left: 1.5rem;">    * Q-DEC: 각 분기의 마지막 달의 마지막 날<br></span>
 
+
+## interpolate(), NaN값 채우기. 보통, 위에 resampling하고 interpolate 한다.
+
+```python
+df_interpolate = df.interpolate()
+
+```
+
 ## 인덱스 초기화
 ```python
 #인덱스 리셋 이거안하면 뒤에 concat할때 꼬인다.
