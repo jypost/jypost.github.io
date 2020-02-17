@@ -445,7 +445,7 @@ testDfWeb['PM25'] = testDfWeb['PM25'].astype('float64')
 ```python
 df = df.resample('1T').mean()
 ```
-<span style="color:#363636; font-size:1.6rem; line-height: 7rem; margin-left: 20rem;">1분 간격 데이터로 Resampling<br>
+<span style="color:#363636; font-size:1.2pt; line-height: 0.5pt; margin-left: 20rem;">1분 간격 데이터로 Resampling<br>
     * freq 인수값 : <br>
     * s: 초<br>
     * T: 분<br>
