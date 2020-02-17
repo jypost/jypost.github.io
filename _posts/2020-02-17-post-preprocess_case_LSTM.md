@@ -14,6 +14,12 @@ tags:
 # LSTM 
 ## 1. preprocess process
 1. data load
+ - 시계열 데이터 
+  - 데이터 길이 확인,
+  - 중간에 빈 row가 있는 경우들이 있음.
+    - 학습에 쓸 데이터 구간인 경우,
+     - 반드시 resampling('현재인터벌')을 해주어 빈 row를 nan값으로 채우고,
+     - interpolate로 nan값을 채워야함
 2. EDA data
   - visualizing
   - pattern
