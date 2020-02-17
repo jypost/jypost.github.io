@@ -445,22 +445,22 @@ testDfWeb['PM25'] = testDfWeb['PM25'].astype('float64')
 ```python
 df = df.resample('1T').mean()
 ```
-1분 간격 데이터로 Resampling
-    * freq 인수값 : 
-    * s: 초
-    * T: 분
-    * H: 시간
-    * D: 일(day)
-    * B: 주말이 아닌 평일
-    * W: 주(일요일)
-    * W-MON: 주(월요일)
-    * M: 각 달(month)의 마지막 날  
-    * MS: 각 달의 첫날
-    * BM: 주말이 아닌 평일 중에서 각 달의 마지막 날
-    * BMS: 주말이 아닌 평일 중에서 각 달의 첫날
-    * WOM-2THU: 각 달의 두번째 목요일
-    * Q-JAN: 각 분기의 첫달의 마지막 날
-    * Q-DEC: 각 분기의 마지막 달의 마지막 날
+1분 간격 데이터로 Resampling<br>
+    * freq 인수값 : <br>
+    * s: 초<br>
+    * T: 분<br>
+    * H: 시간<br>
+    * D: 일(day)<br>
+    * B: 주말이 아닌 평일<br>
+    * W: 주(일요일)<br>
+    * W-MON: 주(월요일)<br>
+    * M: 각 달(month)의 마지막 날<br>
+    * MS: 각 달의 첫날<br>
+    * BM: 주말이 아닌 평일 중에서 각 달의 마지막 날<br>
+    * BMS: 주말이 아닌 평일 중에서 각 달의 첫날<br>
+    * WOM-2THU: 각 달의 두번째 목요일<br>
+    * Q-JAN: 각 분기의 첫달의 마지막 날<br>
+    * Q-DEC: 각 분기의 마지막 달의 마지막 날<br>
 
 ## 인덱스 초기화
 ```python
