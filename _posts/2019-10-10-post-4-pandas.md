@@ -467,7 +467,6 @@ df = df.resample('1T').mean()
 
 ```python
 df_interpolate = df.interpolate()
-
 ```
 
 ## 인덱스 초기화
