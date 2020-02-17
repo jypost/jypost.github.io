@@ -445,22 +445,22 @@ testDfWeb['PM25'] = testDfWeb['PM25'].astype('float64')
 ```python
 df = df.resample('1T').mean()
 ```
-<span style="color:#363636; font-size:1.2pt; line-height: 0.5pt; margin-left: 20rem;">1분 간격 데이터로 Resampling<br>
-    * freq 인수값 : <br>
-    * s: 초<br>
-    * T: 분<br>
-    * H: 시간<br>
-    * D: 일(day)<br>
-    * B: 주말이 아닌 평일<br>
-    * W: 주(일요일)<br>
-    * W-MON: 주(월요일)<br>
-    * M: 각 달(month)의 마지막 날<br>
-    * MS: 각 달의 첫날<br>
-    * BM: 주말이 아닌 평일 중에서 각 달의 마지막 날<br>
-    * BMS: 주말이 아닌 평일 중에서 각 달의 첫날<br>
-    * WOM-2THU: 각 달의 두번째 목요일<br>
-    * Q-JAN: 각 분기의 첫달의 마지막 날<br>
-    * Q-DEC: 각 분기의 마지막 달의 마지막 날<br></span>
+<span style="color:#363636; font-size:1.6pt; line-height: 0.5pt; margin-left: 1rem;">1분 간격 데이터로 Resampling<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * freq 인수값 : <br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * s: 초<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * T: 분<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * H: 시간<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * D: 일(day)<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * B: 주말이 아닌 평일<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * W: 주(일요일)<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * W-MON: 주(월요일)<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * M: 각 달(month)의 마지막 날<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * MS: 각 달의 첫날<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * BM: 주말이 아닌 평일 중에서 각 달의 마지막 날<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * BMS: 주말이 아닌 평일 중에서 각 달의 첫날<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * WOM-2THU: 각 달의 두번째 목요일<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * Q-JAN: 각 분기의 첫달의 마지막 날<br></span>
+<span style="color:#363636; font-size:1.6pt; margin-left: 1rem;">    * Q-DEC: 각 분기의 마지막 달의 마지막 날<br></span>
 
 ## 인덱스 초기화
 ```python
