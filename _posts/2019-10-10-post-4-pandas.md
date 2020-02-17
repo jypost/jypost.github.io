@@ -441,6 +441,27 @@ testDfWeb['PM25'] = testDfWeb['PM25'].astype('float64')
 
 ```
 
+## resampling, 시계열 data 비거나 중복되는 row 맞춤
+```python
+df = df.resample('1T').mean()
+```
+1분 간격 데이터로 Resampling
+    * freq 인수값 : 
+    * s: 초
+    * T: 분
+    * H: 시간
+    * D: 일(day)
+    * B: 주말이 아닌 평일
+    * W: 주(일요일)
+    * W-MON: 주(월요일)
+    * M: 각 달(month)의 마지막 날  
+    * MS: 각 달의 첫날
+    * BM: 주말이 아닌 평일 중에서 각 달의 마지막 날
+    * BMS: 주말이 아닌 평일 중에서 각 달의 첫날
+    * WOM-2THU: 각 달의 두번째 목요일
+    * Q-JAN: 각 분기의 첫달의 마지막 날
+    * Q-DEC: 각 분기의 마지막 달의 마지막 날
+
 ## 인덱스 초기화
 ```python
 #인덱스 리셋 이거안하면 뒤에 concat할때 꼬인다.
