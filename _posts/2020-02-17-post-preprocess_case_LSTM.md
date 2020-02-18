@@ -20,6 +20,9 @@ tags:
   - feature : 4개
   
 ## 1. preprocess process
+
+- '[](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_datamanager_jyp.png?raw=true)'<br>
+
 1. data load
  - 시계열 데이터 
   - 데이터 길이 확인,
