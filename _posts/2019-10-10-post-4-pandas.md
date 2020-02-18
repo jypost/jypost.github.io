@@ -729,7 +729,7 @@ b42.head()
 
 ```
 
-# jupyter 
+# jupyter 환경설정
 ## 1. 설치된 패키지 확인 
 
 ```python
