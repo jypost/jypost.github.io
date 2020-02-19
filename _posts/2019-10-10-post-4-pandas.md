@@ -496,9 +496,12 @@ df = df.set_index('tm') #tm컬럼을 index로 변경
 ```
 
 ## 인덱스에 str형태때문에 datetime64로 변환 안되는 case
+
 - time column의 dtype이 object이고, str에 24가 들어있는경우
 - time columns의 datetime64로 변환이 안됨. 아래 코드 쓰면 됨
+
 ```python
+
 def my_to_datetime(date_str):
     if date_str[11:13] != '24':
         return pd.to_datetime(date_str, format='%Y-%m-%d:%H')
@@ -516,7 +519,9 @@ def newAKdf2():
     return ak
     
 df = newAKdf2() #  사용하면됨
+
 ```
+
 
 ## 인덱스 data Type 변경 
 ```python
