@@ -495,6 +495,29 @@ df = df.set_index('tm') #tm컬럼을 index로 변경
 
 ```
 
+## 인덱스에 str형태때문에 datetime64로 변환 안되는 case
+- time column의 dtype이 object이고, str에 24가 들어있는경우
+- time columns의 datetime64로 변환이 안됨. 아래 코드 쓰면 됨
+```python
+def my_to_datetime(date_str):
+    if date_str[11:13] != '24':
+        return pd.to_datetime(date_str, format='%Y-%m-%d:%H')
+ 
+    date_str = date_str[0:11] + '00'
+    return pd.to_datetime(date_str, format='%Y-%m-%d:%H') + dt.timedelta(days=1)
+    
+def newAKdf2():
+    ak = pd.concat(air_list, axis=0) #위에서 받은 로드 리스트 배열을 하나의 df로 합
+    ak.tm = ak.tm.apply(my_to_datetime) #tm컬럼 24:00분 -> 00:00 분으로하고 1일 추가함 
+    ak = ak.set_index('tm').sort_index() #tm column을 index로 변경하고, 정렬함
+    print('에어코리아', ak.shape, 'PM25 결측', ak['PM25'].isnull().sum(),'개')
+    #ak.index = ak.index.astype('datetime64[ns]') 이거 안됨. tm에 24가 있어서 converting 이 안됨.
+    ak.info()
+    return ak
+    
+df = newAKdf2() #  사용하면됨
+```
+
 ## 인덱스 data Type 변경 
 ```python
 # index가 datetime 일 경우, dtype이 datetime이어야 차트에서 X축에 시간표시됨
