@@ -332,6 +332,14 @@ sen_tm    172746 non-null datetime64[ns]
 testDfWeb = webdf[(webdf['sen_tm'] < '2019-11-14 00:01') & (webdf['sen_tm'] > '2019-10-14 00:00')]
 ```
 
+## 특정날짜 구간 나누기
+```python
+
+df_Y1 = df_Y[dt.datetime(2019, 10, 12):dt.datetime(2019, 11, 15, 23, 59)]
+#년,월,일,시,분...
+```
+
+
 ## 날짜기준 정렬
 ```python
 testDfWeb.sort_values(by=['sen_tm'], inplace=True, ascending=True)
