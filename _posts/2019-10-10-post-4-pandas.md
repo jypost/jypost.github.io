@@ -502,6 +502,23 @@ index.dtype :  datetime64[ns]
 df.index.name = 'tm'
 ```
 
+
+## 차트, matplot legend font argument 
+
+- 한글 폰트 적용할때, legend부분만 깨져서 fontproperties로 넘기려하면 에러난다<br>
+- 아래와 같이 prop로 넘기면 된다
+
+```python
+
+import matplotlib.font_manager as fm
+font_path = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf'
+## font_name 
+font_name = fm.FontProperties(fname=font_path).get_name()
+plt.legend(prop={'family':font_name, 'size':20})
+
+```
+
+
 ## 차트에 한글 폰트 적용
 
 - 폰트 확인
