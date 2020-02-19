@@ -510,11 +510,20 @@ df.index.name = 'tm'
 
 ```python
 
-import matplotlib.font_manager as fm
-font_path = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf'
-## font_name 
+#한글폰트
+path = '/usr/share/fonts/truetype/nanum/NanumGothic.ttf'
+fontprop = fm.FontProperties(fname=path, size=16)
+
 font_name = fm.FontProperties(fname=font_path).get_name()
-plt.legend(prop={'family':font_name, 'size':20})
+plt.legend(['A','B'],prop=fontprop)
+
+```
+
+## 차트, title, x label 간격
+
+```python
+plt.title(feature, fontproperties=fontprop, pad= 17)
+plt.xlabel(datatate, labelpad=20)
 
 ```
 
