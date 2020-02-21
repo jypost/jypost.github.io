@@ -290,6 +290,22 @@ ddff
 
 ```
 
+## threshold 구하기
+
+```python
+list_err = err['pm25_dif'] # 정상차량 스퀘어 에러 리스트 
+mean, std = np.average(list_err), np.std(list_err) #여기서 mean, std 축출
+threshold = mean + (3*std) #아래 수식으로 thresfhold 연산
+print('mean', mean)
+print('std', std)
+print('threshold', threshold)
+
+out:
+mean 0.34924421070164924
+std 49.3638057713741
+threshold 148.44066152482395
+
+```
 
 
 ## list의 원소인 str을 변수로 데이터프레임 반복 생성 (엄청 많이씀)
