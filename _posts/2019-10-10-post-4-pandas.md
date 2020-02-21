@@ -284,11 +284,35 @@ ddd
 ## ndarray를 list로 
 ```python
 
-#ndarray를 list로
+#df를 list로
 ddff = list(bbb['tm'].values)
 ddff
 
 ```
+
+## ndarray를 2차원 > 1차원으로  
+```python
+
+
+In [1]: import numpy as np
+...: x = np.arange(12).reshape(3, 4)
+...: x
+...:
+
+Out[1]:
+array([[ 0, 1, 2, 3],
+        [ 4, 5, 6, 7],
+        [ 8, 9, 10, 11]])
+
+np.ravel(x, order='C') # by default
+Out[2]: array([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
+
+np.ravel(x, order='F')
+Out[3]: array([ 0, 4, 8, 1, 5, 9, 2, 6, 10, 3, 7, 11])
+
+order=K 도있는데, 메모리 발생순
+```
+
 
 ## threshold 구하기
 
