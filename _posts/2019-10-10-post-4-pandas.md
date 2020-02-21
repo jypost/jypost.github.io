@@ -307,6 +307,54 @@ threshold 148.44066152482395
 
 ```
 
+## 소수점 반올림
+
+```python
+#round(수, 자릿수)
+print(round(end_time - start_time, 4))
+
+#정수로
+x=35.6
+int(x)
+
+```
+
+## 시간측정 1
+
+```python
+import timeit
+start = timeit.default_timer()
+
+# 실행 코드
+
+stop = timeit.default_timer()
+print(stop - start)
+```
+
+## 시간측정 2 decorator 사용
+
+```python
+
+import time
+
+def logging_time(original_fn):
+    def wrapper_fn(*args, **kwargs):
+        start_time = time.time()
+        result = original_fn(*args, **kwargs)
+        end_time = time.time()
+        print('실행시간 : ',round(end_time - start_time, 4),'초')
+        return result
+    return wrapper_fn
+
+#아래처럼 사용, 함수위에 써주면 된다. 함수 실행시 위의 함수가 함꼐 호출된다.
+@logging_time
+def my_func1():
+    print("시간측정")
+
+#데코레이터에 사용되는 함수는 반드시 적용되어질 대상 함수보다 먼저 정의되어야 한다.
+2.적용은 함수 외에도 클래스도 가능
+
+```
 
 ## list의 원소인 str을 변수로 데이터프레임 반복 생성 (엄청 많이씀)
 ```python
