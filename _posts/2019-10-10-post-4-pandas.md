@@ -263,13 +263,14 @@ ddd1
 
 - 데이터 프레임 복사할떄 copy()로 하면 copy본을 조작해도 원본에 영향없다.
 ```python
+```python
 영향 없음
 df = df_X3.copy()
 
 영향 줌
 df = df_X3[:]
 df = df_X3
-
+```
 ```
 
 
