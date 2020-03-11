@@ -269,6 +269,7 @@ df = df_X3.copy()
 영향 줌
 df = df_X3[:]
 df = df_X3
+
 ```
 
 
