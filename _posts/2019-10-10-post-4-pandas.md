@@ -258,6 +258,14 @@ ddd1
 
 
 ```
+## 데이터 프레임  
+```python
+
+#array를 list로
+ddd = ddd.to_list()
+ddd
+
+```
 
 ## array를 list로 
 ```python
