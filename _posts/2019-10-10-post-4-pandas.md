@@ -271,10 +271,11 @@ df = df_X3[:]
 df = df_X3
 ```
 
-## 특정프레임에 함수 적용, Apply로 
+
+## 특정프레임에 함수 적용, Apply로
+
 - 시간 표기법을 바꾸는 함수 적용
 ```python
-
 bitcoin_df.head()
 out: 
 	close	date	high	low	open	quoteVolume	volume	weightedAverage
