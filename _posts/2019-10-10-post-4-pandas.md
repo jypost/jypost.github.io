@@ -308,7 +308,6 @@ out:
 ```
 
 
-
 ## array를 list로 
 ```python
 
