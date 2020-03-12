@@ -68,6 +68,17 @@ def InputSetTarget(Input, Output):
     return X, Y
 
 InputSetTarget(price1, price1)
+
+
+# for i in range(len(price1)-sequence1):
+#     X.append([price1[i+j] for j in range(sequence1)])
+#     Y_start = sequence1 + i #예측 값의 시작 위치
+#     Y_start_limit = len(price1)-predCount+1 #예측할 수 있는 마지막 값의 위치
+#     if Y_start >= Y_start_limit: #예측 값의 시작 위치가 예측할 수 있는 마지막 값과 같거나 
+#         Y_start = Y_start_limit-1
+#     Y.append([price1[Y_start + k] for k in range(predCount)])
+
+
 ```
 
 
