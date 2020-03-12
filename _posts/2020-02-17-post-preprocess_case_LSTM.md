@@ -53,16 +53,15 @@ def InputSetTarget(Input, Output):
 #     Output = Y만들 데이터
     X = []
     Y = []
-
+    Y_start_limit = len(Input)-predCount+1 #예측할 수 있는 마지막 값의 위치
     print('#예측 값 Y의 시작 위치', sequence1+1, '번째 부터')
     print('#예측 값 Y의 count ', predCount, ' 만큼씩')
     for i in range(len(Input)-sequence-predCount+1):
         Y_start = sequence + i #예측 값의 시작 위치
-        Y_start_limit = len(Input)-predCount+1 #예측할 수 있는 마지막 값의 위치
         X.append([Input[i+j] for j in range(sequence) if Y_start < Y_start_limit])
         Y.append([Output[Y_start + k] for k in range(predCount) if Y_start < Y_start_limit])
 
-    print('#예측값 Y의 마지막 값의 위치', Y_start_limit, '번째 까지. 해당 번째의 시작 값은', price1[len(price1)-predCount])
+    print('#예측값 Y의 마지막 값의 위치', Y_start_limit, '번째 까지. 해당 번째의 시작 값은', Output[len(Output)-predCount])
     print('len(X): ', len(X), ' /  len(Y): ', len(Y))
     
     return X, Y
