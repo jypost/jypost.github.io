@@ -38,7 +38,39 @@ tags:
 3. reshape
    - dType
    - dimension
-   
+
+## 2. preprocessing
+
+```python
+price1 = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+price2 = [21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]
+sequence = 5 #인풋 X의 길이
+predCount = 7 #출력할 Y값의 길이 ( 일주일치 예측하려면 7 넣으면 된다)
+
+#인풋 데이터로 아웃풋을 만들때에는 input 과 output을 같은 데이터를 넣으면 됨
+def InputSetTarget(Input, Output):
+#     Input = X만들 데이터
+#     Output = Y만들 데이터
+    X = []
+    Y = []
+
+    print('#예측 값 Y의 시작 위치', sequence1+1, '번째 부터')
+    print('#예측 값 Y의 count ', predCount, ' 만큼씩')
+    for i in range(len(Input)-sequence-predCount+1):
+        Y_start = sequence + i #예측 값의 시작 위치
+        Y_start_limit = len(Input)-predCount+1 #예측할 수 있는 마지막 값의 위치
+        X.append([Input[i+j] for j in range(sequence) if Y_start < Y_start_limit])
+        Y.append([Output[Y_start + k] for k in range(predCount) if Y_start < Y_start_limit])
+
+    print('#예측값 Y의 마지막 값의 위치', Y_start_limit, '번째 까지. 해당 번째의 시작 값은', price1[len(price1)-predCount])
+    print('len(X): ', len(X), ' /  len(Y): ', len(Y))
+    
+    return X, Y
+
+InputSetTarget(price1, price1)
+```
+
+
 
 ```python
   pip freeze
