@@ -752,6 +752,7 @@ def showshow(Y, title, hlineN):
                rotation=0)
     plt.axhline(y=hlineN, color='r', linewidth=1, alpha=0.7)
     plt.legend(['Price','current Price'])
+    plt.legend(['에어코리아', 'KTR'], prop=fontprop)
     plt.title(str(title), fontproperties=fontprop)
     plt.show()
 ```
