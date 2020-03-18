@@ -809,7 +809,31 @@ df.columns = ['sensorid', 'PM10', 'PM25', 'temp', 'humid', 'tm']
 
 ## TEST 데이터프레임 생성
 ```python
+#시계열 데이터 샘플 생성
+test_datas = {'pm25' : np.arange(0,50),
+             'tm' : pd.date_range('2019-01-01',periods=50, freq='1T')
+             }
+test_ktr = pd.DataFrame(data=test_datas)
+test_ktr = test_ktr.set_index('tm').sort_index()
 
+test_ktr2 = test_ktr.resample('2T').first() #2분
+
+print(test_ktr.head())
+print(test_ktr2.head())
+
+
+#시계열 데이터 샘플 랜덤 생성 
+# generate time series index
+range = pd.date_range('2019-12-19', '2019-12-20', freq='2min')
+df = pd.DataFrame(index = range)[:20]
+
+# add 'price' columm using random number
+np.random.seed(seed=1004) # for reproducibility
+df['price'] = np.random.randint(low=10, high=100, size=20)
+
+# add 'amount' column unsing random number
+df['amount'] = np.random.randint(low=1, high=5, size=20)
+print('Shape of df DataFrame:', df.shape)
 ```
 ## 데이터 프레임 합치기
 ```python
