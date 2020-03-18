@@ -379,6 +379,21 @@ int(x)
 
 ```
 
+## 소수점 표시
+
+```python
+number = 4
+num = '%.'+str(number)+'f' # 표시할 자리수
+ss = num % 34.293875
+ss
+
+out:
+'34.2939'
+
+```
+
+
+
 ## 시간측정 1
 
 ```python
