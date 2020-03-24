@@ -270,6 +270,10 @@ df = df_X3.copy()
 df = df_X3[:]
 df = df_X3
 
+import copy
+test_list = df_list.copy() #얕은 복사
+# # test_list = copy.deepcopy(df_list) #깊은 복사
+
 ```
 
 ## 특정프레임에 함수 적용, Apply로
