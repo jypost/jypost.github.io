@@ -639,9 +639,14 @@ df_interpolate = df.interpolate()
 df_C = df_C.reset_index(drop=True)
 ```
 
-## 인덱스 기준으로 데이터 정렬
+## 인덱스 기준으로 데이터 정렬, 오름차순, 내림차순
 ```python
 df = df.sort_index()
+df = df.sort_index(ascending=False)
+
+#아래는 index로 설정하면서 차순 정렬
+dfs = dfs.set_index('date').sort_index(ascending=False)
+
 ```
 
 ## 인덱스 datetime으로 변경 
