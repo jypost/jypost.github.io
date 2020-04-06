@@ -225,7 +225,42 @@ df1.A.value_counts()
   b20    4<br>
   b21    4<br>
   Name: A, dtype: int64
-  
+ 
+
+
+## 특정 컬럼에서 반복되는 값(id) 축출, 리스트로
+
+```python
+
+rowdf.sen_id.value_counts()
+rowdf.sen_id.value_counts().index
+
+out ======
+Index(['ktr0052', 'ktr0032', 'ktr0033', 'ktr0039', 'ktr0042', 'ktr0043',
+       'ktr0044', 'ktr0040', 'ktr0035', 'ktr0055', 'ktr0041', 'ktr0038',
+       'ktr0054', 'ktr0037', 'ktr0050', 'ktr0051', 'ktr0047', 'ktr0053',
+       'ktr0045', 'ktr0031', 'ktr0046', 'ktr0056', 'ktr0048', 'ktr0036',
+       'ktr0057', 'ktr0059', 'ktr0062', 'ktr0061'],
+      dtype='object')
+
+sensor_list = rowdf.sen_id.value_counts().index.tolist()
+sensor_list.sort()
+sensor_list[:5]
+
+out ======
+['ktr0031', 'ktr0032', 'ktr0033', 'ktr0035', 'ktr0036']
+
+
+```
+
+
+
+
+
+
+
+
+
 
 ## 데이터 프레임 발라내기 column select 
 ```python
