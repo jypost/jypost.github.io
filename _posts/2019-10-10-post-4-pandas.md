@@ -1052,3 +1052,27 @@ import sys
 sys.path.append('/home/data/common module/')
 from datamanager import *
 ```
+
+
+## 4. 케라스에서 만든 모델, 레이어/shape확인/모델구조 이미지저장
+ 
+ 
+```python
+  # LSTM모델 예시
+  ### LSTM 모델
+np.random.seed(0)
+model = Sequential()
+model.add(LSTM(32, return_sequences=True, input_shape=(60, 1))) # return_sequences=True,
+model.add(LSTM(32))
+model.add(Dense(1, activation='relu')) 
+model.compile(loss='mse', optimizer='Adam')
+model.summary()
+
+from IPython.display import SVG
+from keras.utils.vis_utils import model_to_dot
+from keras.utils import plot_model
+
+%matplotlib inline
+plot_model(model,  show_shapes=True,to_file='model.png')
+  
+```
