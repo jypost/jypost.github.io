@@ -846,6 +846,19 @@ def saveAsxls(data, name):
     data.to_excel(save_dir+name+".xls", sheet_name='Sheet1', index=False)
 ```
 
+## 데이터 로컬 불러오기 
+
+```python
+# data load 
+name = 'data'
+path = './' #현재폴더
+df = pd.read_csv(path+name+'.csv', index_col='인덱스로 쓸 컬럼 명')
+
+
+data_path = '/home/data'
+df = pd.read_excel(data_path + '/data.xls')
+```
+
 ## 현재 경로 얻기
 ```python
   datapath = os.getcwd() 
