@@ -1089,3 +1089,18 @@ from keras.utils import plot_model
 plot_model(model,  show_shapes=True,to_file='model.png')
   
 ```
+
+## 5. 터미널에서 쥬피터 파일 압축/압축풀기
+ 
+ - plotly(설치패키지명 예시)
+ 
+현재 폴더 보기
+입력창: ls
+
+압축 : zip -r backupALL.zip back_up_ALL_1023
+Zip / -r / 압축될 파일 폴더명.zip / 압축될 파일 폴더
+
+압축 풀때
+unzip test.zip
+unzip / 압축풀 파일명
+
