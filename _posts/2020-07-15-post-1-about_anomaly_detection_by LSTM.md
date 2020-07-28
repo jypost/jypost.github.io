@@ -22,7 +22,9 @@ smaple : 40 test<br>
 input data.shape :  (40, 60, 1)<br>
 ![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_001.png?raw=true)<br>
 
-
+smaple : 440 test<br>
+input data.shape :  (440, 60, 1)<br>
+![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_002.png?raw=true)<br>
 
 데이터 증식, 데이터 보강, 데이터 증강, 데이터 확장, 데이터 보완, 데이터 늘이기 등. 다양하게 번역되는 용어이다.<br>
 기존 데이터를 이리저리 변형해 새로운 데이터를 만들어 기존 데이터에 덧붙이는 방식으로
