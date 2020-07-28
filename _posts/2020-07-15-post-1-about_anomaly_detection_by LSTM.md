@@ -12,6 +12,12 @@ tags:
 
 # <span style="color:black">LSTM 이상감지 모델, 이상한 점</span><br>
 시작,<br>
+
+original training data<br>
+![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_training_original.png?raw=true)<br>
+noise added training data<br>
+![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_training_noise.png?raw=true)<br>
+
 smaple : 40 test<br>
 input data.shape :  (40, 60, 1)<br>
 ![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_001.png?raw=true)<br>
