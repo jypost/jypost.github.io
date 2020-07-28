@@ -12,6 +12,8 @@ tags:
 
 # <span style="color:black">LSTM 이상감지 모델, 이상한 점</span><br>
 시작,<br>
+LSTM으로 학습한 시계열 예측 모델의 학습 조건에 유의할 필요가 있다. <br>
+
 
 original training data<br>
 ![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_training_original.png?raw=true)<br>
@@ -21,10 +23,13 @@ noise added training data<br>
 smaple : 40 test<br>
 input data.shape :  (40, 60, 1)<br>
 ![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_001.png?raw=true)<br>
+test set의 갯수를 줄여보면 결함이 더욱 확연하게 드러난다.
 
 smaple : 440 test<br>
 input data.shape :  (440, 60, 1)<br>
 ![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_002.png?raw=true)<br>
+440개의 sequence로 테스트 한 결과. 예상했던 차트가 나온다.
+
 
 데이터 증식, 데이터 보강, 데이터 증강, 데이터 확장, 데이터 보완, 데이터 늘이기 등. 다양하게 번역되는 용어이다.<br>
 기존 데이터를 이리저리 변형해 새로운 데이터를 만들어 기존 데이터에 덧붙이는 방식으로
