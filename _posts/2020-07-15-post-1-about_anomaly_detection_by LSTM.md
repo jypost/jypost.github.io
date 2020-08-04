@@ -10,15 +10,29 @@ tags:
 - time series anomaly detection
 ---
 
-# <span style="color:black">LSTM 이상감지 모델, 이상한 점</span><br>
+# <span style="color:black">Many to one : RNN network</span><br>
 시작,<br>
 LSTM으로 학습한 시계열 예측 모델의 학습 조건에 유의할 필요가 있다. <br>
 
 
 original training data<br>
 ![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_training_original.png?raw=true)<br>
+
 noise added training data<br>
 ![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_training_noise.png?raw=true)<br>
+
+noising function<br>
+```python
+def noising(data,noise_factor):
+    noise = np.random.randn(len(data))
+    augmented_data = data + noise_factor * noise
+    augmented_data = augmented_data.astype(type(data[0]))
+    return augmented_data
+    
+np.random.seed(81)
+dataAddedNoise = noising(OriginalData,np.random.uniform(0,6))
+
+```
 
 smaple : 40 test<br>
 input data.shape :  (40, 60, 1)<br>
