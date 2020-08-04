@@ -45,7 +45,13 @@ input data.shape :  (440, 60, 1)<br>
 440개의 sequence로 테스트 한 결과. 예상했던 차트가 나온다.
 
 
-데이터 증식, 데이터 보강, 데이터 증강, 데이터 확장, 데이터 보완, 데이터 늘이기 등. 다양하게 번역되는 용어이다.<br>
+위에 정리한 자료는 RNN의 한 종류인 LSTM cell을 활용하여 만든 anormaly detection의 원리와 헛점에 대한 실험 결과이다. <br>
+컨셉은 이렇다<br>
+이상감지를 위해서 취득한 데이터 중 정상인 데이터의 시계열 패턴을 LSTM cell을 layer로 모델을 설계하고 학습시킨다.<br>
+학습모델의 큰 틀은 정상인 X training 데이터와 정상인 Y training 데이터를 mapping한 학습 데이터를 만들어 모델을 만든다.<br>
+위의 자료에서 사용한 network type은 many to one을 기반으로 한 데이터 mapping이으로, <br>
+training 데이터의 sequence와 동일한 shape의 데이터를 inference 하면, 하나의 예측값을 얻게된다 <br>
+
 기존 데이터를 이리저리 변형해 새로운 데이터를 만들어 기존 데이터에 덧붙이는 방식으로
 기존 데이터를 보강한다는 면을 생각하면 <span style="color:#2539A6; font-size: 1.6rem;">**'데이터 늘이기'**</span>라는 말이 개념을 가장 잘 나타내는것 같다.<br>
 *통계학에서는 augmentation을 확대로 해석한다고(음, 여튼 딥러닝에서는 늘이기가 쉽게 이해된다.)* <br>
