@@ -45,7 +45,7 @@ input data.shape :  (440, 60, 1)<br>
 440개의 sequence로 테스트 한 결과. 예상했던 차트가 나온다.
 
 
-위에 정리한 자료는 RNN의 한 종류인 LSTM cell을 활용하여 만든 anormaly detection의 원리와 헛점에 대한 실험 결과이다. <br>
+위에 정리한 자료는 RNN의 한 종류인 LSTM cell을 활용하여 만든 anormaly detection의 <span style="color:#2539A6; font-size: 1.6rem;">**'원리와 헛점'**</span>에 대한 실험 결과이다. <br>
 컨셉은 이렇다<br>
 이상감지를 위해서 취득한 데이터 중 정상인 데이터의 시계열 패턴을 LSTM cell을 layer로 모델을 설계하고 학습시킨다.<br>
 학습모델의 큰 틀은 정상인 X training 데이터와 정상인 Y training 데이터를 mapping한 학습 데이터를 만들어 모델을 만든다.<br>
@@ -69,4 +69,4 @@ training 데이터의 sequence와 동일한 shape의 데이터를 inference 하�
   * 아래 데모 코드 참조
 <br><br>
 
-## <span style="color:#C83821">Many to one Type에서 LSTM으로 만든 모델은 패턴학습을 할 수 없다. ( stateful이 False경우에만 해당 )</span><br>
+## <span style="color:#C83821">Many to one Type에서 LSTM으로 만든 모델은 패턴학습을 할 수 없다. <br>(stateful이 False인 경우)</span><br>
