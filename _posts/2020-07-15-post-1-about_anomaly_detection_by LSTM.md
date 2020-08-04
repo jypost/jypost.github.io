@@ -69,4 +69,4 @@ training 데이터의 sequence와 동일한 shape의 데이터를 inference 하�
   * 아래 데모 코드 참조
 <br><br>
 
-## <span style="color:#C83821">imgaug 라이브러리를 활용하면 쉽게 data augmentation을 할 수 있다.</span><br>
+## <span style="color:#C83821">Many to one Type에서 LSTM으로 만든 모델은 패턴학습을 할 수 없다. ( stateful이 False경우에만 해당 )</span><br>
