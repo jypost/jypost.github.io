@@ -759,6 +759,17 @@ plt.xlabel(datatate, labelpad=20)
 
 ```
 
+## 차트, 특정 구간 강조
+
+```python
+plt.plot(data['PM25'], color='#4287f5', marker='o', markersize=0.7, alpha=1)
+plt.plot(data['PM10'], color='#eb8b3d', marker='o', markersize=0.7, linestyle='-', alpha=0.5)      
+span_start = datetime(2020, 10, 13, 14)
+span_end = datetime(2020, 10, 14, 13)
+plt.axvspan(span_start, span_end, facecolor='r', alpha=0.3)
+
+```
+
 
 ## 차트에 한글 폰트 적용
 
