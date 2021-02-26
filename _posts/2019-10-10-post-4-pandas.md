@@ -890,6 +890,34 @@ df = traindata[['센서Code', 'PM10 (μg/㎥)', 'PM2.5 (μg/㎥)', 'Temp (℃)',
 df.columns = ['sensorid', 'PM10', 'PM25', 'temp', 'humid', 'tm']
 ```
 
+## TEST 데이터프레임 X,Y mapping set 
+```python
+X = np.arange(0,10)
+Y = np.arange(0,10)
+print(X)
+print(Y)
+
+def InputSetTarget(data_X, data_Y, sq):
+    X = []
+    Y = []
+    for i in range(len(data_X)-sq+1):
+        X.append([data_X[i+j] for j in range(sq)])
+        Y.append(data_Y[sq+i-1])
+#     print('len(X) :',len(X))
+#     print('len(Y) :',len(Y))
+    return X, Y
+
+x, y = InputSetTarget(X,Y,3)
+print(x)
+print(y)
+
+out========
+[0 1 2 3 4 5 6 7 8 9]
+[0 1 2 3 4 5 6 7 8 9]
+[[0, 1, 2], [1, 2, 3], [2, 3, 4], [3, 4, 5], [4, 5, 6], [5, 6, 7], [6, 7, 8], [7, 8, 9]]
+[2, 3, 4, 5, 6, 7, 8, 9]
+```
+
 ## TEST 데이터프레임 생성
 ```python
 #시계열 데이터 샘플 생성
