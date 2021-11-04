@@ -640,6 +640,62 @@ testDfWeb['PM25'] = testDfWeb['PM25'].astype('float64')
 
 ```
 
+## 데이터프레임 인덱스 값 변경: 시간단위>분단위 일 경우, 변경에 따른 없는 값은 Nan으로
+```python
+
+#nan 이포함된 테스트 데이터프레임 생성 
+test_datas = {'pm25' : np.arange(0,5),
+             'tm' : pd.date_range('2019-01-01',periods=5, freq='3T')
+             }
+test_df = pd.DataFrame(data=test_datas)
+test_df = test_df.set_index('tm').sort_index()
+
+#특정값 nan으로 변경
+
+test_df['pm25'] = test_df['pm25'].replace([c for c in test_df['pm25'] if c % 2 == 0], np.nan)
+
+# for i in test_df['pm25']:
+#     if i % 2 == 0:
+#         test_df['pm25'] = test_df['pm25'].replace(i, np.nan) 
+
+print(len(list(test_df.index)))
+
+test_df
+
+```
+out put 
+```python
+	pm25
+tm	
+2019-01-01 00:00:00	NaN
+2019-01-01 00:03:00	1.0
+2019-01-01 00:06:00	NaN
+2019-01-01 00:09:00	3.0
+2019-01-01 00:12:00	NaN
+```
+
+데이터 프레임 인덱스 간격 변경 3분단위 > 1분 단위 (없는 값은 nan으로 입력됨 )
+```python
+range_date = pd.date_range('2019-01-01', '2019-01-01 00:10', freq='1T')
+out_df = pd.DataFrame(index = range_date, data = test_df)
+out_df
+```
+out put
+```python
+	pm25
+2019-01-01 00:00:00	NaN
+2019-01-01 00:01:00	NaN
+2019-01-01 00:02:00	NaN
+2019-01-01 00:03:00	1.0
+2019-01-01 00:04:00	NaN
+2019-01-01 00:05:00	NaN
+2019-01-01 00:06:00	NaN
+2019-01-01 00:07:00	NaN
+2019-01-01 00:08:00	NaN
+2019-01-01 00:09:00	3.0
+2019-01-01 00:10:00	NaN
+```
+
 ## resampling, 시계열 data 비거나 중복되는 row 맞춤
 ```python
 df = df.resample('1T').mean()
