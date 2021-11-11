@@ -12,9 +12,9 @@ tags:
 
 바이낸스 거래소
 # <span style="color:black">바이낸스 거래소</span><br>
-바이낸스 가입 링크 <P>
-<A href="https://accounts.binance.me/en/register?ref=84111996t"> <P> 
-  바이낸스 회원가입 및 수수료 영구할인 받기 </A> <P>
+바이낸스 가입 링크 <br>
+<A href="https://accounts.binance.me/en/register?ref=84111996t">
+  바이낸스 회원가입 및 수수료 영구할인 받기 </A><br>
 <!-- # <span style="color:black">https://accounts.binance.me/en/register?ref=84111996</span><br> -->
 위의 링크로 바이낸스 가입을 하면 거래수수료의 20% 할인혜택을 받으며, 영구적 할인이 적용된다.
 * 바이낸스 가입은 이메일 가입으로 절차는 간단하다
