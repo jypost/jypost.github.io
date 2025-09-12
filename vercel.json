@@ -1,4 +1,9 @@
 {
-  "buildCommand": "gem install bundler -v 2.4.22 && bundle install && bundle exec jekyll build",
+  "build": {
+    "env": {
+      "BUNDLE_WITHOUT": "development:test"
+    }
+  },
+  "buildCommand": "gem install bundler && bundle config set --local deployment false && bundle install && bundle exec jekyll build",
   "outputDirectory": "_site"
 }
