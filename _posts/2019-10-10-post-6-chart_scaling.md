@@ -21,10 +21,10 @@ tags:
 <span>이거 DataFrame['feature'].values로 </span>
 
 
-![png](https://github.com/jypost/jypost.github.io/blob/master/img/output_6_1.png?raw=true)
+![png](https://github.com/jypost/jypost.github.io/blob/main/img/output_6_1.png?raw=true)
 원본 데이터 셋 /List타입 길이 확인 :  512998
 <br>
-![png](https://github.com/jypost/jypost.github.io/blob/master/img/output_7_1.png?raw=true)
+![png](https://github.com/jypost/jypost.github.io/blob/main/img/output_7_1.png?raw=true)
 원본 데이터 셋 / DataFrame타입 shape 확인 :  (512998,)
 
 
@@ -151,7 +151,7 @@ print('원본 데이터 셋 /List타입 길이 확인 : ',len(df_pm25))
 
 
 
-![png](https://github.com/jypost/jypost.github.io/blob/master/img/output_6_1.png?raw=true)
+![png](https://github.com/jypost/jypost.github.io/blob/main/img/output_6_1.png?raw=true)
 
 
 
@@ -175,5 +175,5 @@ print('원본 데이터 셋 / DataFrame타입 shape 확인 : ',df_pm25.shape)
 
 
 
-![png](https://github.com/jypost/jypost.github.io/blob/master/img/output_7_1.png?raw=true)
+![png](https://github.com/jypost/jypost.github.io/blob/main/img/output_7_1.png?raw=true)
 

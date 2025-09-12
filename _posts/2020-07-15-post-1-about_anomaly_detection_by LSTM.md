@@ -16,10 +16,10 @@ LSTM으로 학습한 시계열 예측 모델의 학습 조건에 유의할 필�
 
 
 original training data<br>
-![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_training_original.png?raw=true)<br>
+![](https://github.com/jypost/jypost.github.io/blob/main/img/LSTM_test_training_original.png?raw=true)<br>
 
 noise added training data<br>
-![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_training_noise.png?raw=true)<br>
+![](https://github.com/jypost/jypost.github.io/blob/main/img/LSTM_test_training_noise.png?raw=true)<br>
 
 noising function<br>
 ```python
@@ -36,12 +36,12 @@ dataAddedNoise = noising(OriginalData,np.random.uniform(0,6))
 
 smaple : 40 test<br>
 input data.shape :  (40, 60, 1)<br>
-![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_001.png?raw=true)<br>
+![](https://github.com/jypost/jypost.github.io/blob/main/img/LSTM_test_001.png?raw=true)<br>
 test set의 갯수를 줄여보면 결함이 더욱 확연하게 드러난다.
 
 smaple : 440 test<br>
 input data.shape :  (440, 60, 1)<br>
-![](https://github.com/jypost/jypost.github.io/blob/master/img/LSTM_test_002.png?raw=true)<br>
+![](https://github.com/jypost/jypost.github.io/blob/main/img/LSTM_test_002.png?raw=true)<br>
 440개의 sequence로 테스트 한 결과. 예상했던 차트가 나온다.
 
 

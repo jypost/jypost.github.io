@@ -11,4 +11,4 @@ tags:
 ---
 
 
-![](https://github.com/jypost/jypost.github.io/blob/master/img/DimensionOfModels.png?raw=true)<br>
+![](https://github.com/jypost/jypost.github.io/blob/main/img/DimensionOfModels.png?raw=true)<br>
