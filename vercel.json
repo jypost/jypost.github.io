@@ -1,9 +1,4 @@
 {
-  "build": {
-    "env": {
-      "BUNDLE_GEMFILE": "Gemfile"
-    }
-  },
-  "buildCommand": "gem install bundler -v 2.4.22 && bundle install && bundle exec jekyll build",
+  "buildCommand": "rm -f Gemfile.lock && gem install bundler -v 2.4.22 && bundle install && bundle exec jekyll build",
   "outputDirectory": "_site"
 }
